@@ -10,7 +10,11 @@ class PinsController < ApplicationController
   end
 
   def create
-    #responds to json here
+    @pin = Pin.new(pin_params)
+
+    respond_to do |format|
+      if @pin.save
+        format.json { render json: @pin, status: :created}
   end
 
   def main
