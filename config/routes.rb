@@ -15,13 +15,8 @@ Rails.application.routes.draw do
 
   resources :pins
 
-  root 'pins#main'
+  root "pins#new"
 
-  # get '/contacts/main', to: 'contacts#main', as: 'main'
-
-  # get '/contacts', to: 'contacts#index'
-
-  
 end
 
 

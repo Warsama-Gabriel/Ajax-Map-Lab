@@ -15,9 +15,8 @@ class PinsController < ApplicationController
     respond_to do |format|
       if @pin.save
         format.json { render json: @pin, status: :created}
-  end
-
-  def main
+      end
+    end
   end
 
 end
